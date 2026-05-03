@@ -1,0 +1,44 @@
+[
+    {
+        "orderId": 1,
+        "customerName": "Justin Verrick",
+        "phone": "111-111-1111",
+        "email": "j.v@gmail.com",
+        "projectType": "Dining Table",
+        "projectDescription": "Custom oak dining table",
+        "estimatedCost": 1800,
+        "amountPaid": 300,
+        "balanceDue": 1500,
+        "dueDate": "2026-06-01",
+        "orderStatus": "In Progress",
+        "dateCreated": "5/1/2026"
+    },
+    {
+        "orderId": 2,
+        "customerName": "John Doe",
+        "phone": "222-222-2222",
+        "email": "johndoe@gmail.com",
+        "projectType": "Bookshelf",
+        "projectDescription": "Walnut bookshelf for home office",
+        "estimatedCost": 750,
+        "amountPaid": 750,
+        "balanceDue": 0,
+        "dueDate": "2026-05-3",
+        "orderStatus": "Completed",
+        "dateCreated": "5/1/2026"
+    },
+    {
+        "orderId": 3,
+        "customerName": "Amanda Smith",
+        "phone": "333-333-3333",
+        "email": "amandasmith@gmail.com",
+        "projectType": "Cutting Board & Coaster set",
+        "projectDescription": "Custom cutting board & coasters",
+        "estimatedCost": 300,
+        "amountPaid": 50,
+        "balanceDue": 250,
+        "dueDate": "2026-06-02",
+        "orderStatus": "Requested",
+        "dateCreated": "5/3/2026"
+    }
+]

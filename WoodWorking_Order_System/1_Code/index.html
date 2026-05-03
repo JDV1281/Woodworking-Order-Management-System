@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Woodworking Order Management System</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <header>
+        <h1>Woodworking Order Management System</h1>
+        <p>Manage customer orders, payments, and project status in one place.</p>
+    </header>
+
+    <main>
+        <section class="form-section">
+            <h2>Add New Order</h2>
+
+            <form id="orderForm">
+                <label for="customerName">Customer Name</label>
+                <input type="text" id="customerName">
+
+                <label for="phone">Phone Number</label>
+                <input type="text" id="phone">
+
+                <label for="email">Email</label>
+                <input type="email" id="email">
+
+                <label for="projectType">Project Type</label>
+                <input type="text" id="projectType" placeholder="Table, cabinet, cutting board, etc.">
+
+                <label for="projectDescription">Project Description</label>
+                <textarea id="projectDescription"></textarea>
+
+                <label for="estimatedCost">Estimated Cost</label>
+                <input type="number" id="estimatedCost" step="0.01">
+
+                <label for="amountPaid">Amount Paid</label>
+                <input type="number" id="amountPaid" step="0.01">
+
+                <label for="dueDate">Due Date</label>
+                <input type="date" id="dueDate">
+
+                <label for="orderStatus">Order Status</label>
+                <select id="orderStatus">
+                    <option value="">Select Status</option>
+                    <option value="Requested">Requested</option>
+                    <option value="Approved">Approved</option>
+                    <option value="In Progress">In Progress</option>
+                    <option value="Completed">Completed</option>
+                    <option value="Delivered">Delivered</option>
+                </select>
+
+                <p id="errorMessage"></p>
+
+                <button type="submit">Save Order</button>
+            </form>
+        </section>
+
+		<section class="summary-section">
+			<h2>Order Summary</h2>
+			<p>Total Orders: <span id="totalOrders">0</span></p>
+			<p>Total Balance Due: $<span id="totalBalance">0.00</span></p>
+		</section>
+
+        <section class="orders-section">
+            <h2>Saved Orders</h2>
+
+            <table>
+                <thead>
+                    <tr>
+                        <th>Customer</th>
+                        <th>Project</th>
+                        <th>Due Date</th>
+                        <th>Status</th>
+                        <th>Balance Due</th>
+                        <th>Actions</th>
+                    </tr>
+                </thead>
+                <tbody id="ordersTableBody">
+                </tbody>
+            </table>
+        </section>
+    </main>
+
+    <script src="script.js"></script>
+	
+</body>
+
+</html>
